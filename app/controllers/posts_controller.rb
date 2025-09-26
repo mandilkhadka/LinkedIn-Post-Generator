@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.generated_text = RubyLLM.chat.ask("Generate a Linkedin post from this text: #{@post.notes} with all of the critereia mentioned
+    @post.generated_text = RubyLLM.chat(model: "gemini-2.5-flash").ask("Generate a Linkedin post from this text: #{@post.notes} with all of the critereia mentioned
     1. Tone = #{@post.tone}
     2. Length = #{@post.length_option}
     3. Include hastags? = #{@post.hashtags}").content

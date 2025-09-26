@@ -1,0 +1,10 @@
+<div class="m-5">
+<h2>Linkedin Post Generate</h2>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :notes, required: true, placeholder: "Input your notes for the post"%>
+  <%= f.input :tone, as: :select, collection: %w[Professional Friendly Witty Inspirational Casual], selected: "Casual" %>
+  <%= f.input :length_option, as: :select, collection: %w[Short Medium Long Very-Long], selected: "medium" %>
+  <%= f.input :hashtags, as: :select, collection: %w[Yes No], selected: "Yes" %>
+  <%= f.button :submit, "Create Linkedin Post", class: "btn btn-primary text-white rounded-5"%>
+<% end %>
+</div>

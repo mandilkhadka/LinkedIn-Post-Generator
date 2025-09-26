@@ -72,3 +72,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "ostruct"
+gem "ruby_llm", "~> 1.6.4"

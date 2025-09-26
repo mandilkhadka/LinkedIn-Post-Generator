@@ -9,28 +9,28 @@
 ![Gemini](https://img.shields.io/badge/Gemini-API-4285F4?logo=google&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Turn your messy notes into polished, post-ready LinkedIn content with the power of AI.  
-Built with **Rails 7 + Gemini API** for makers, founders, and anyone who struggles with  
+Turn your messy notes into polished, post-ready LinkedIn content with the power of AI.
+Built with **Rails 7 + Gemini API** for makers, founders, and anyone who struggles with
 “How do I start this post?”
 
 ---
 
 ## 🌟 What It Does
 
-- 📝 Paste your raw notes or half-baked ideas.  
-- 🎨 Choose a tone → Professional, Friendly, Witty, or Inspirational.  
-- 📏 Pick a length → Short, Medium, or Long.  
-- 🔖 Let AI sprinkle in relevant hashtags (optional).  
-- 📚 Save your drafts, refine later, and post with confidence.  
+- 📝 Paste your raw notes or half-baked ideas.
+- 🎨 Choose a tone → Professional, Friendly, Witty, or Inspirational.
+- 📏 Pick a length → Short, Medium, or Long.
+- 🔖 Let AI sprinkle in relevant hashtags (optional).
+- 📚 Save your drafts, refine later, and post with confidence.
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Ruby on Rails 7**  
-- **PostgreSQL** (storage)  
-- **Gemini API** (AI magic ✨)  
-- **dotenv-rails** (safe secrets)  
+- **Ruby on Rails 7**
+- **PostgreSQL** (storage)
+- **Gemini API** (AI magic ✨)
+- **dotenv-rails** (safe secrets)
 
 ---
 
@@ -87,18 +87,21 @@ app/controllers/posts_controller.rb → The traffic cop 🚦
 app/views/posts/ → Simple UI forms + results
 ```
 
-### 🛣 Roadmap
+## 🛣 Roadmap
 ```
-⏳ Async generation with background jobs
-
-🔴 Live-stream drafts via ActionCable
-
-🔐 User accounts (multi-user)
-
-📤 One-click publish to LinkedIn
-
-🎨 Sleeker UI with TailwindCSS
-
-🛠 Refactoring → Code works, but needs cleanup and optimization
+- ⏳ Async generation with background jobs
+- 🔴 Live-stream drafts via ActionCable
+- 🔐 User accounts (multi-user)
+- 📤 One-click publish to LinkedIn
+- 🎨 Sleeker UI with TailwindCSS
+- 🛠 Refactoring → Code works, but needs cleanup and optimization
+- 📱 Mobile-friendly UI for on-the-go post drafting
+- 🌐 Multi-language support (English, Japanese, more)
+- ✍️ Rich text editor with formatting & emoji picker
+- 📊 Post analytics dashboard (views, engagement, performance)
+- 🤖 Smarter hashtag + keyword suggestions
+- 🔔 Draft reminders & scheduling
+- 🧑‍🤝‍🧑 Team collaboration (share + edit drafts together)
 ```
+
 ---

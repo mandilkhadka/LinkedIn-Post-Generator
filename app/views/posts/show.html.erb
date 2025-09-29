@@ -1,8 +1,16 @@
 <h2>Linkedin Final Post</h2>
-
-<h4>Generated Post</h4>
-<%= @post.generated_text %>
-
-<h4>Input Notes</h4>
-<%= @post.notes %>
-
+<div class="card" data-controller="clipboard">
+  <h4>Generated Post</h4>
+  <div class="card-body">
+    <div data-clipboard-target="content">
+      <%= @post.generated_text %>
+    </div>
+  </div>
+</div>
+<button clss="btn btn-primary" data-action="clipboard#copy">Copy</button>
+<div class="card mt-4">
+  <div class="card-body">
+    <h4>Input Notes</h4>
+    <%= @post.notes %>
+  </div>
+</div>

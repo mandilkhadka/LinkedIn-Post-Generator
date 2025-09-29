@@ -1,10 +1,57 @@
-<div class="m-5">
-<h2>Linkedin Post Generate</h2>
-<%= simple_form_for @post do |f| %>
-  <%= f.input :notes, required: true, placeholder: "Input your notes for the post"%>
-  <%= f.input :tone, as: :select, collection: %w[Professional Friendly Witty Inspirational Casual], selected: "Casual" %>
-  <%= f.input :length_option, as: :select, collection: %w[Short Medium Long Very-Long], selected: "medium" %>
-  <%= f.input :hashtags, as: :select, collection: %w[Yes No], selected: "Yes" %>
-  <%= f.button :submit, "Create Linkedin Post", class: "btn btn-primary text-white rounded-5"%>
-<% end %>
+<div class="my-5">
+  <div class="card shadow-sm rounded-4 border-0 mx-auto" style="max-width: 650px;">
+    <div class="card p-5 border-primary bg-light">
+      <h2 class="card-title mb-4 text-center fw-bold text-primary">
+        LinkedIn Post Generator
+      </h2>
+
+      <%= simple_form_for @post, html: { class: "needs-validation" } do |f| %>
+
+        <div class="mb-4">
+          <%= f.input :notes,
+                required: true,
+                placeholder: "Input your notes for the post",
+                label: "Your Notes",
+                input_html: { class: "form-control rounded-3 shadow-sm" },
+                label_html: { class: "form-label fw-semibold" } %>
+        </div>
+
+        <div class="mb-4">
+          <%= f.input :tone,
+                as: :select,
+                collection: %w[Professional Friendly Witty Inspirational Casual],
+                selected: "Casual",
+                label: "Tone",
+                input_html: { class: "form-select rounded-3 shadow-sm" },
+                label_html: { class: "form-label fw-semibold" } %>
+        </div>
+
+        <div class="mb-4">
+          <%= f.input :length_option,
+                as: :select,
+                collection: %w[Short Medium Long Very-Long],
+                selected: "Medium",
+                label: "Length",
+                input_html: { class: "form-select rounded-3 shadow-sm" },
+                label_html: { class: "form-label fw-semibold" } %>
+        </div>
+
+        <div class="mb-4">
+          <%= f.input :hashtags,
+                as: :select,
+                collection: %w[Yes No],
+                selected: "Yes",
+                label: "Include Hashtags?",
+                input_html: { class: "form-select rounded-3 shadow-sm" },
+                label_html: { class: "form-label fw-semibold" } %>
+        </div>
+
+        <div class="d-grid">
+          <%= f.button :submit, "✨ Create LinkedIn Post",
+                class: "btn btn-primary btn-lg rounded-3 shadow-sm fw-semibold" %>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
 </div>

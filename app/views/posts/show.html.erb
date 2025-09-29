@@ -1,16 +1,35 @@
-<h2>Linkedin Final Post</h2>
-<div class="card" data-controller="clipboard">
-  <h4>Generated Post</h4>
-  <div class="card-body">
-    <div data-clipboard-target="content">
-      <%= @post.generated_text %>
+<div data-controller="clipboard" class="my-5">
+  <div class="card shadow-sm rounded-4 border-0 mx-auto" style="max-width: 650px;">
+    <div class="card p-5 border-primary bg-light">
+      <h2 class="card-title mb-3 text-center fw-bold text-primary">
+        LinkedIn Final Post
+      </h2>
+      <h4 class="fw-semibold text-secondary mb-3 text-center">
+        Generated Post
+      </h4>
+      <div class="card shadow-sm rounded-3 border-0 mb-4">
+        <div class="card-body bg-white rounded-3 shadow-sm p-4">
+          <div data-clipboard-target="content" class="text-dark">
+            <%= @post.generated_text %>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-3">
+        <button class="btn btn-success px-4 shadow-sm" data-action="clipboard#copy">
+          📋 Copy
+        </button>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourwebsite.com/your-post"
+           target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary px-4 shadow-sm">
+            🔗 Share on LinkedIn
+          </button>
+        </a>
+      </div>
+
     </div>
-  </div>
-</div>
-<button clss="btn btn-primary" data-action="clipboard#copy">Copy</button>
-<div class="card mt-4">
-  <div class="card-body">
-    <h4>Input Notes</h4>
-    <%= @post.notes %>
+
+
+      <%= link_to "🆕 Create another post", root_path, class: "btn btn-primary btn-lg rounded-3 shadow-sm fw-semibold"  %>
+      </button>
   </div>
 </div>

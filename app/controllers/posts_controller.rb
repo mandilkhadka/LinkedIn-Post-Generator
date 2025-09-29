@@ -19,7 +19,7 @@ def create
     - Write as if it’s a real LinkedIn post.
     - Add emojis naturally to match the tone.
     - If "Include Hashtags" = Yes, include relevant hashtags at the end.
-    - Keep it professional yet engaging.
+    - Keep it professional yet more fun and engaging.
     - Do NOT give multiple options.
     - Do NOT add explanations or commentary.
     - Output only the LinkedIn post text.

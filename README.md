@@ -89,12 +89,12 @@ app/views/posts/ → Simple UI forms + results
 
 ## 🛣 Roadmap
 ```
+- 🛠 Refactoring → Code works, but needs cleanup and optimization
 - ⏳ Async generation with background jobs
 - 🔴 Live-stream drafts via ActionCable
 - 🔐 User accounts (multi-user)
 - 📤 One-click publish to LinkedIn
 - 🎨 Sleeker UI with TailwindCSS
-- 🛠 Refactoring → Code works, but needs cleanup and optimization
 - 📱 Mobile-friendly UI for on-the-go post drafting
 - 🌐 Multi-language support (English, Japanese, more)
 - ✍️ Rich text editor with formatting & emoji picker
